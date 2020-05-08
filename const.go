@@ -1,15 +1,5 @@
 package yask
 
-// Voice is struct of voice object into
-type Voice struct {
-	NameEn  string `json:"name_en"`
-	MameRu  string `json:"name_ru"`
-	Voice   string `json:"voice"`
-	Lang    string `json:"lang"`
-	Male    bool   `json:"is_male"`
-	Premium bool   `json:"is_premium"`
-}
-
 const (
 	// YaSTTUrl is url for send speech to text requests
 	YaSTTUrl = "https://stt.api.cloud.yandex.net/speech/v1/stt:recognize"
@@ -121,3 +111,13 @@ var (
 		Voice{"Filipp", "Филипп", VoiceNick, LangRU, true, true},
 	}
 )
+
+// Voice is struct of voice object into
+type Voice struct {
+	NameEn  string `json:"name_en"`
+	MameRu  string `json:"name_ru"`
+	Voice   string `json:"voice"`
+	Lang    string `json:"lang"`
+	Male    bool   `json:"is_male"`
+	Premium bool   `json:"is_premium"`
+}
