@@ -53,7 +53,7 @@ func unmarshallYaError(r io.Reader) (err error) {
 	return
 }
 
-// Voises returns slice of available vioces
+// Voices returns slice of available vioces
 // lang: empty (all alngs) ru-RU, en-EN, tr-TR
 // sex: 0 - all, 1 - male, 2 - female
 // premium: 0 - all, 1 - standard only, 2 - premium only

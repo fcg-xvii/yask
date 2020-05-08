@@ -93,3 +93,7 @@ func main() {
 	log.Println(text)
 }
 ```
+
+## Лицензия
+
+The MIT License (MIT), подробнее [LICENSE](LICENSE).

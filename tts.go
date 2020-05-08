@@ -9,6 +9,7 @@ import (
 	"strings"
 )
 
+// TTSConfig is config for text to speeh method
 type TTSConfig struct {
 	Text       string
 	SSML       string
@@ -22,10 +23,12 @@ type TTSConfig struct {
 	YaAPIKey   string
 }
 
+// ssml content checker
 func (s *TTSConfig) isSSML() bool {
 	return len(s.SSML) > 0
 }
 
+// returns TTSConfig with default parameters
 func defaultTTSConfig(yaFolderID, yaAPIKey string) *TTSConfig {
 	return &TTSConfig{
 		Lang:       LangRU,
@@ -39,14 +42,14 @@ func defaultTTSConfig(yaFolderID, yaAPIKey string) *TTSConfig {
 	}
 }
 
-// TTsDefaultConfigText returns config with default parameters for raw text recognition and use in TextToSpeech method
+// TTSDefaultConfigText returns config with default parameters for raw text recognition and use in TextToSpeech method
 func TTSDefaultConfigText(yaFolderID, yaAPIKey, text string) *TTSConfig {
 	conf := defaultTTSConfig(yaFolderID, yaAPIKey)
 	conf.Text = text
 	return conf
 }
 
-// TTsDefaultConfigSSML returns config with default parameters for raw text recognition and use in TextToSpeech method
+// TTSDefaultConfigSSML returns config with default parameters for raw text recognition and use in TextToSpeech method
 // more details of SSML language in https://cloud.yandex.ru/docs/speechkit/tts/ssml
 func TTSDefaultConfigSSML(yaFolderID, yaAPIKey, SSML string) *TTSConfig {
 	conf := defaultTTSConfig(yaFolderID, yaAPIKey)

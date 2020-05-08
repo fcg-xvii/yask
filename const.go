@@ -1,5 +1,6 @@
 package yask
 
+// Voice is struct of voice object into
 type Voice struct {
 	NameEn  string `json:"name_en"`
 	MameRu  string `json:"name_ru"`
@@ -17,6 +18,7 @@ const (
 	YaTTSUrl = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize"
 
 	// Formats of audio
+
 	// FormatLPCM is PCM audio format (wav) without wav header (more details in https://en.wikipedia.org/wiki/Pulse-code_modulation)
 	FormatLPCM = "lpcm"
 	// FormatOgg is audio ogg format
@@ -49,7 +51,7 @@ const (
 	// SpeedSlowest is minimum speed of voice (0.1)
 	SpeedSlowest float32 = 0.1
 
-	// Voice speechs
+	// Voice speeches
 
 	// VoiceOksana is Oksana voice (russian, female, standard)
 	VoiceOksana = "oksana"
@@ -75,6 +77,7 @@ const (
 	VoiceFilipp = "filipp"
 
 	// Voice emotions
+
 	// EmotionGood is good voice emotion
 	EmotionGood = "good"
 	// EmotionEvil is evil voice emotion
@@ -86,9 +89,9 @@ const (
 
 	// TopicGeneral is current version of voice model (available in all languages)
 	TopicGeneral = "general"
-	// TopicRC is experimental version of voice model (russian language)
+	// TopicGeneralRC is experimental version of voice model (russian language)
 	TopicGeneralRC = "general:rc"
-	// TopicDeprecated is deprecated version of voice model (russian language)
+	// TopicGeneralDeprecated is deprecated version of voice model (russian language)
 	TopicGeneralDeprecated = "general:deprecated"
 	// TopicMaps is model for addresses anc company names
 	TopicMaps = "maps"

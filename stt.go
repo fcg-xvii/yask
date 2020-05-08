@@ -10,6 +10,7 @@ import (
 	"strconv"
 )
 
+// STTConfigDefault returns STTConfig with default parameters
 func STTConfigDefault(yaFolderID, yaAPIKey string, data io.Reader) *STTConfig {
 	return &STTConfig{
 		Lang:            "ru-RU",
@@ -23,6 +24,7 @@ func STTConfigDefault(yaFolderID, yaAPIKey string, data io.Reader) *STTConfig {
 	}
 }
 
+// STTConfig is config for speech to text methods
 type STTConfig struct {
 	Lang            string
 	Topic           string
@@ -34,7 +36,8 @@ type STTConfig struct {
 	Data            io.Reader
 }
 
-func (s *STTConfig) URI() string {
+// uri returns url with get parameters for http request
+func (s *STTConfig) uri() string {
 	vars := url.Values{
 		"lang":            []string{s.Lang},
 		"topic":           []string{s.Topic},
@@ -48,11 +51,11 @@ func (s *STTConfig) URI() string {
 	return url
 }
 
-// SpeechToText returns text from a PCM or OGG sound stream using the service Yandex Speech Kit
+// SpeechToTextShort returns text from a PCM or OGG sound stream using the service Yandex Speech Kit
 func SpeechToTextShort(conf *STTConfig) (string, error) {
 	req, err := http.NewRequest(
 		"POST",
-		conf.URI(),
+		conf.uri(),
 		conf.Data,
 	)
 	if err != nil {
