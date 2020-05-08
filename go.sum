@@ -1,0 +1,9 @@
+github.com/fcg-xvii/go-tools v0.0.0-20200508201218-1e919c727b5d h1:8mxF+S89GOZkn1F4AO5cWujo4ryj7asKKuBec2Tt2T8=
+github.com/fcg-xvii/go-tools v0.0.0-20200508201218-1e919c727b5d/go.mod h1:99INCxALoGw9mQWOmpCdBDvjm6Wk1HbDV4afw5UrORw=
+github.com/go-audio/audio v1.0.0 h1:zS9vebldgbQqktK4H0lUqWrG8P0NxCJVqcj7ZpNnwd4=
+github.com/go-audio/audio v1.0.0/go.mod h1:6uAu0+H2lHkwdGsAY+j2wHPNPpPoeg5AaEFh9FlA+Zs=
+github.com/go-audio/riff v1.0.0 h1:d8iCGbDvox9BfLagY94fBynxSPHO80LmZCaOsmKxokA=
+github.com/go-audio/riff v1.0.0/go.mod h1:l3cQwc85y79NQFCRB7TiPoNiaijp6q8Z0Uv38rVG498=
+github.com/go-audio/wav v1.0.0 h1:WdSGLhtyud6bof6XHL28xKeCQRzCV06pOFo3LZsFdyE=
+github.com/go-audio/wav v1.0.0/go.mod h1:3yoReyQOsiARkvPl3ERCi8JFjihzG6WhjYpZCf5zAWE=
+github.com/lib/pq v1.3.0/go.mod h1:5WUZQaWbwv1U+lTReE5YruASi9Al49XbQIvNi/34Woo=
