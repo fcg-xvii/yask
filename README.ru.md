@@ -3,6 +3,9 @@
   <a href="README.md#go-tools">English</a>
 </p>
 
+[![Build Status](https://travis-ci.org/fcg-xvii/yask.svg?branch=master)](https://travis-ci.org/fcg-xvii/yask)
+ [![Go Report Card](https://goreportcard.com/badge/github.com/fcg-xvii/yask)](https://goreportcard.com/report/github.com/fcg-xvii/yask)
+
 # yask
 > Инструмент для работы с сервисом синтеза и распознавания речи <b>Yandex Speech Kit</b> (подробнее о сервисе <a href="https://cloud.yandex.ru/docs/speechkit/" target="_blank">https://cloud.yandex.ru/docs/speechkit/</a>) для языка программирования <b>golang</b>. Инструмент позволяет синтезировать речь из тескта, а так же распознавать текст из звукового потока.
 

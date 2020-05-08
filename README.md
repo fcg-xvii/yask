@@ -4,6 +4,7 @@
 </p>
 
 [![Build Status](https://travis-ci.org/fcg-xvii/yask.svg?branch=master)](https://travis-ci.org/fcg-xvii/yask)
+ [![Go Report Card](https://goreportcard.com/badge/github.com/fcg-xvii/yask)](https://goreportcard.com/report/github.com/fcg-xvii/yask)
 
 # yask
 > Tools for work with the synthesis and speech recognition service <b>Yandex Speech Kit</b> (more about in <a href="https://cloud.yandex.ru/docs/speechkit/" target="_blank">https://cloud.yandex.ru/docs/speechkit/</a>) for <b>golang</b> programming language. Used to synthesize speech from text and recognize text from a sound stream.
