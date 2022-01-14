@@ -69,6 +69,11 @@ func TextToSpeech(config *TTSConfig) (io.ReadCloser, error) {
 		"sampleRateHertz": []string{strconv.FormatInt(int64(config.Rate), 10)},
 		"folderId":        []string{config.YaFolderID},
 	}
+	// emotion deprecated - only for omazh and jane
+	if config.Voice != "omazh" && config.Voice != "jane" {
+		delete(httpForm, "emotion")
+	}
+	// ssml
 	if config.isSSML() {
 		httpForm.Set("ssml", config.SSML)
 	} else {
